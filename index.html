@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Pomodoro Timer</h1>
+        <div class="app-message">Press start to begin</div>
+
+
+        <div class="app-circle">
+            <div class="circle-shape">
+                <div class="semi-circle right-side circle-mask"></div>
+                <div class="semi-circle right-side circle"></div>
+                <div class="semi-circle left-side circle-mask"></div>
+                <div class="semi-circle left-side circle"></div>
+            </div>
+            <div class="app-counter-box">
+                <p><span class="minutes">00</span>:<span class="seconds">00</span></p>
+            </div>
+            <button class="btn-start">Start</button>
+        </div>
+        
+        <!-- Time setting form -->
+        <div class="time-inputs">
+          <label for="minutes">Minutes:</label>
+          <input type="number" id="minutes" min="0" value="0" />
+          <label for="seconds">Seconds:</label>
+          <input type="number" id="seconds" min="0" max="59" value="0" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
